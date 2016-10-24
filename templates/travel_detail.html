@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load staticfiles %}
+	<meta charset="UTF-8">
+	<title>{{ travel.name }}</title>
+	<link type="text/css" rel="stylesheet" href="{% static 'materialize/bin/materialize.css' %}"  media="screen,projection"/>
+	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+	<div class="titulo">
+		<h1 class="titulo center">{{ travel.name }}</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="card-panel center">
+				<img src="{{ travel.image.url }}" alt="">
+				<h3>${{ travel.price }} USD c/u</h3>
+				<p>{{ travel.description }}</p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'materialize/bin/materialize.js' %}"></script>
+</body>
+</html>
