@@ -8,6 +8,10 @@ body {
 	background-color: #F5F5F5;
 }
 
+select {
+	display: block;
+}
+
 .img-tr {
 	width: 200px;
 	height: 200px;
@@ -24,4 +28,10 @@ body {
 .nav-side{
 	height: 100%;
 	min-height: 100%;
+}
+
+.select-personas{
+	margin-left: 32.5% !important;
+	margin-bottom: 15px;
+	
 }
