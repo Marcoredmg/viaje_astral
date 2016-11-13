@@ -5,13 +5,23 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Viajes Astrales</title>
-    <link type="text/css" rel="stylesheet" href="{% static 'materialize/bin/materialize.css' %}"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}"  media="screen,projection"/>
 	<link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
-	<div class="titulo">
-		<h1 class="titulo center">Astral Travels</h1>
-	</div>
+	<nav>
+		<div class="nav-wrapper">
+		    <a href="#" class="brand-logo center">Viajes Astrales</a>
+		    <a href="#" data-activates="mobile-demo" class="left button-collapse"><i class="material-icons">menu</i></a>
+		    <ul id="nav-mobile" class="right hide-on-med-and-down">
+			    <li><a href="/"><i class="material-icons right">home</i>Home</a></li>
+			    
+	      	<ul id="mobile-demo" class="side-nav">
+			    <li><a href="/">Home</a></li>
+	      	</ul>
+		</div>
+	</nav>
 	<div class="row">
 		<div class="col s2 nav-side">
 			Aqui va a ir algo pero aun no se me ocurre que es lo que pudera ocupar este espacio
@@ -44,6 +54,10 @@
 	
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="{% static 'materialize/bin/materialize.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
+    <script>$(document).ready(function(){
+      $('.carousel').carousel();
+    });</script>
+    <script>$(".button-collapse").sideNav();</script>
 </body>
 </html>

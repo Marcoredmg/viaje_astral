@@ -5,17 +5,36 @@ html {
 
 body {
 	font-family: 'HelveticaNeue-Light';
-	background-color: #F5F5F5;
+	background-color: #C0D8EC;
 }
 
 select {
 	display: block;
 }
 
+.nav-wrapper{
+	background-color: #0089EC;
+}
+
 .img-tr {
 	width: 200px;
 	height: 200px;
 }
+
+.img-cr{
+	margin-top: -50px;
+	width: 300px !important;
+	height: 300px !important;
+}
+.img-logo{
+	width: 200px;
+	height: 100px;
+}
+
+.detail-panel{
+	background-color: #FAFAFF;
+}
+
 
 .titulo{
 	background-color: #0089EC;
