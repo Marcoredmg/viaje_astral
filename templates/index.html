@@ -22,11 +22,27 @@
 	      	</ul>
 		</div>
 	</nav>
+	<div class="slider">
+		<ul class="slides">
+			<li>
+				<img class="" src="{% static 'slider1.jpg' %}" alt="">
+			</li>
+			<li>
+				<img class="" src="{% static 'slider2.jpg' %}" alt="">
+			</li>
+			<li>
+				<img class="" src="{% static 'slider3.jpg' %}" alt="">
+			</li>
+			<li>
+				<img class="" src="{% static 'slider4.jpg' %}" alt="">
+			</li>
+		</ul>
+	</div>
 	<div class="row">
-		<div class="col s2 nav-side">
+		<div class="col s3 nav-side">
 			Aqui va a ir algo pero aun no se me ocurre que es lo que pudera ocupar este espacio
 		</div>
-		<div class="col s10">
+		<div class="col s8">
 			<table class="bordered centered col s12 card-panel">
 				<thead>
 					<tr>
@@ -58,6 +74,8 @@
     <script>$(document).ready(function(){
       $('.carousel').carousel();
     });</script>
-    <script>$(".button-collapse").sideNav();</script>
+    <script>$(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });</script>
 </body>
 </html>

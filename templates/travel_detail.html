@@ -39,11 +39,12 @@
 				<h3 id="precioFinal">${{ travel.price }} USD c/u</h3>
 				<p>{{ travel.description }}</p>
 				<input type="hidden" id="tbPrecio" value="{{ travel.price }}">
+				<h5 class="blue-text text-lighten-1">Please check our family/friends discounts with the selector</h5>
 				<div class="col s12">
 					<select class="col s4 select-personas" name="" id="selectPersonas">
-						<option value="1">1 Persona</option>
-						<option value="2">2 Personas</option>
-						<option value="3">3 Personas</option>
+						<option value="1">1 People</option>
+						<option value="5">Friends package(5 People)</option>
+						<option value="10">Family package(10 People)</option>
 					</select>
 				</div>
 				<input type="submit" class="btn blue" onclick="CalcularDescuento();" value="Calcular">
@@ -60,5 +61,6 @@
     </script>
     <script>
     $(".button-collapse").sideNav();</script>
+    <script></script>
 </body>
 </html>

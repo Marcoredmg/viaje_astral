@@ -31,11 +31,21 @@ select {
 	height: 100px;
 }
 
+.slides{
+	height: 450px !important;
+}
+
+.slider{
+	height: 500px !important;
+}
+
 .detail-panel{
 	background-color: #FAFAFF;
 }
 
-
+.slider .indicators .indicator-item.active{
+	background-color: #0089EC;
+}
 .titulo{
 	background-color: #0089EC;
 	color: #FAFAFA;
